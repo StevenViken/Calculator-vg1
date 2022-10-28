@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import MaxNLocator
 
 Lånebeløp = float(input("Lånebeløp: ").replace(" ", ""))
-Løpetid = int(input("Løpetid år: ").replace(" ", ""))
+Løpetid = int(input("Løpetid i år: ").replace(" ", ""))
 Terminer = int(input("Terminer per år: ").replace(" ", ""))
 Rente = float(input("Rente %: ").replace(" ", ""))/100
 Avdrag = Lånebeløp / (Løpetid*Terminer)
