@@ -1,5 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+from matplotlib.ticker import MaxNLocator
 
 Lånebeløp = float(input("Lånebeløp: ").replace(" ", ""))
 Løpetid = int(input("Løpetid år: ").replace(" ", ""))
@@ -44,7 +45,9 @@ ax.bar(numberList, listRenter, width, bottom=listAvdrag,
 plt.ticklabel_format(style='plain')
 
 ax.set_ylabel('Kr')
+ax.set_xlabel('Terminer')
 ax.set_title('Renter og avdrag')
 ax.legend()
+ax.xaxis.set_major_locator(MaxNLocator(integer=True))
 
 plt.show()
